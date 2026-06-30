@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS (after Bootstrap so it overrides) -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════  FIXED NAV WRAPPER  ═══════════════════════ -->
+    <section id="navvv">
+
+        <!-- ── Top Bar ── -->
+        <div class="navheading d-flex align-items-center justify-content-between px-3 px-md-5">
+            <p class="mb-0 text-white small">Free shipping, 30-day return or refund guarantee.</p>
+            <div class="oo d-flex gap-3">
+                <a href="#" class="pp">SIGN IN</a>
+                <a href="#" class="pp">FAQS</a>
+                <a href="#" class="pp">USD</a>
+            </div>
+        </div>
+
+        <!-- ── Main Navbar ── -->
+        <nav class="navbar navbar-expand-lg bg-white py-3 px-3 px-md-4">
+            <div class="container-xl">
+
+                <!-- Logo -->
+                <a class="navbar-brand p-0" href="#">
+                    <img src="fashionimg/logonewone (1).png" alt="Logo" style="height:45px;">
+                </a>
+
+                <!-- Hamburger -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#fashionNav" aria-controls="fashionNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible links -->
+                <div class="collapse navbar-collapse" id="fashionNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pages">Pages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+
+                        <!-- Login -->
+                        <li class="nav-item openopen">
+                            <button id="openLogin" class="nav-link bg-transparent border-0 p-0 px-3">Login</button>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Icons -->
+                    <div class="icons d-flex gap-3 align-items-center ms-lg-3 mt-2 mt-lg-0">
+                        <i class='bx bx-search'></i>
+                        <i class='bx bx-book-heart'></i>
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </section>
+
+    <!-- Login Modal Overlay -->
+    <div id="modalOverlay">
+        <div id="modal">
+            <button id="closeModal">✕</button>
+            <h3>Login</h3>
+            <form>
+                <input type="email" placeholder="Enter Email" required>
+                <input type="password" placeholder="Enter Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop">↑<br>Home</button>
+
+
+    <!-- ═══════════════════════  HERO SLIDER  ═══════════════════════ -->
+    <section id="home">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide slide1 active">
+                    <div class="mmmmmmm">
+                        <p class="para">SUMMER COLLECTION</p>
+                        <h1 class="parah1">Fall-Winter<br>Collections 2030</h1>
+                        <p class="para2">A specialist label creating luxury essentials. Ethically crafted with an
+                            unwavering commitment to exceptional quality.</p>
+                        <div class="mmm">
+                            <a href="#" class="btnnn">SHOP NOW</a>
+                        </div>
+                        <div class="iiii">
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-twitter'></i>
+                            <i class='bx bxl-pinterest'></i>
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide slide2">
+                    <div class="mmmmmmm">
+                        <p class="para">SUMMER COLLECTION</p>
+                        <h1 class="parah1">Fall-Winter<br>Collections 2030</h1>
+                        <p class="para2">A specialist label creating luxury essentials. Ethically crafted with an
+                            unwavering commitment to exceptional quality.</p>
+                        <div class="mmm">
+                            <a href="#" class="btnnn">SHOP NOW</a>
+                        </div>
+                        <div class="iiii">
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-twitter'></i>
+                            <i class='bx bxl-pinterest'></i>
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn prev">⟨</div>
+            <div class="btn next">⟩</div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════  BANNER SECTIONS  ═══════════════════════ -->
+    <section id="shop" class="py-5">
+        <div class="container-xl px-3 px-md-4">
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Banner 1 – Clothing -->
+                <div class="col-12 col-md-6 col-lg-4 position-relative banner-wrap dd">
+                    <img src="fashionimg/banner-1 new.jpg" class="img-fluid w-100 banner-img" alt="Clothing">
+                    <div class="banner-text photo6">
+                        <h1>Clothing<br>Collections 2030</h1>
+                        <div class="h11b mt-3">
+                            <a href="#" class="h11">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner 2 – Accessories -->
+                <div class="col-12 col-md-6 col-lg-4 position-relative banner-wrap ee">
+                    <img src="fashionimg/banner-2 new.jpg" class="img-fluid w-100 banner-img" alt="Accessories">
+                    <div class="banner-text photo7">
+                        <h1>Accessories</h1>
+                        <div class="h11b mt-3">
+                            <a href="#" class="h11">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner 3 – Shoes -->
+                <div class="col-12 col-md-12 col-lg-4 position-relative banner-wrap ff">
+                    <img src="fashionimg/banner-3new.jpg" class="img-fluid w-100 banner-img" alt="Shoes">
+                    <div class="banner-text photo8">
+                        <h1>Shoes Spring<br>2030</h1>
+                        <div class="h11a mt-3">
+                            <a href="#" class="h11">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════  BEST SELLER / NEW ARRIVAL  ═══════════════════════ -->
+    <section class="newoneh py-5" id="pages">
+        <div class="container-xl px-3 px-md-4">
+
+            <!-- Tab buttons -->
+            <div class="content d-flex justify-content-center gap-4 gap-md-5 mb-4">
+                <button id="showShoes">
+                    <h1>Best Seller</h1>
+                </button>
+                <button id="showShirts">
+                    <h1>New Arrival</h1>
+                </button>
+            </div>
+
+            <!-- Best Seller images -->
+            <div class="shoes row g-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="fashionimg/product-8 shirt2.jpg" class="iiiii img-fluid w-100" alt="Product">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="fashionimg/product-2 jacket.jpg" class="iiiii img-fluid w-100" alt="Product">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="fashionimg/product-3 shoe 2.jpg" class="iiiii img-fluid w-100" alt="Product">
+                </div>
+            </div>
+
+            <!-- New Arrival images (hidden by default) -->
+            <div id="shirts" class="row g-3 justify-content-center" style="display:none !important;">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="fashionimg/product-4 jacket2.jpg" class="iiiii img-fluid w-100" alt="Product">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="fashionimg/product-5 shirt.jpg" class="iiiii img-fluid w-100" alt="Product">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="fashionimg/product-6 shawl.jpg" class="iiiii img-fluid w-100" alt="Product">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════  BAG / DEAL SECTION  ═══════════════════════ -->
+    <section class="bagimg py-5 my-4">
+        <div class="container-xl px-3 px-md-4">
+            <div class="row align-items-center g-4">
+
+                <!-- Left labels -->
+                <div class="col-12 col-md-3 left text-center text-md-start">
+                    <div class="box d-none d-md-block"></div>
+                    <h1 class="grey">Clothings Hot</h1>
+                    <h1>Shoe Collection</h1>
+                    <h1 class="grey">Accessories</h1>
+                </div>
+
+                <!-- Bag image + sale badge -->
+                <div class="col-12 col-md-4 tasveer text-center">
+                    <p class="sale-badge d-inline-block">Sale Of<br>$29.99</p>
+                    <img src="fashionimg/product-salebag.png" class="img-fluid" alt="Sale Bag"
+                        style="max-height:340px;">
+                </div>
+
+                <!-- Right text -->
+                <div class="col-12 col-md-5 right text-center text-md-start">
+                    <p class="text-danger fw-semibold">DEALS OF THE WEEKS</p>
+                    <h1>Multi-pocket Chest<br>Bag Black</h1>
+                    <div class="shopnow mt-4">
+                        <a href="#" class="newbtn">SHOP NOW</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════  INSTAGRAM SECTION  ═══════════════════════ -->
+    <section class="instagram-section py-5">
+        <div class="container-xl px-3 px-md-4">
+            <div class="row g-2">
+
+                <!-- 6 Instagram photos -->
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img src="fashionimg/instagram-1.jpg" class="img-fluid w-100 insta-img" alt="instagram">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <img src="fashionimg/instagram-2.jpg" class="img-fluid w-100 insta-img" alt="instagram">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 ss">
+                    <img src="fashionimg/instagram-3.jpg" class="img-fluid w-100 insta-img" alt="instagram">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 ss">
+                    <img src="fashionimg/instagram-4.jpg" class="img-fluid w-100 insta-img" alt="instagram">
+                </div>
+                
+
+                <!-- Text column -->
+                <div class="col-12 col-sm-8 col-lg-2 imta d-flex flex-column justify-content-center">
+                    <h1>Instagram</h1>
+                    <h1 class="male">#Male_Fashion</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════  LATEST NEWS / BLOG  ═══════════════════════ -->
+    <section class="py-5 vv">
+        <div class="container-xl px-3 px-md-4">
+
+            <div class="classs text-center mb-5">
+                <p class="text-danger fw-semibold mb-1">LATEST NEWS</p>
+                <h1>Fashion New Trends</h1>
+            </div>
+
+            <div class="bodu row g-5 justify-content-center">
+
+                <!-- Blog Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="blog-card card-1">
+                        <img src="fashionimg/blog-1coffee.jpg" alt="Coffee Cups" class="img-fluid w-100">
+                        <div class="blog-content">
+                            <div class="date">16 February 2020</div>
+                            <div class="title fw-bold">What Curling Irons Are The Best Ones</div>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="blog-card card-2">
+                        <img src="fashionimg/blog-2coffee.jpg" alt="Coffee Cups" class="img-fluid w-100">
+                        <div class="blog-content">
+                            <div class="date">21 February 2020</div>
+                            <div class="title fw-bold">Eternity Bands Do Last Forever</div>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="blog-card card-3">
+                        <img src="fashionimg/blog-3coffee.jpg" alt="Coffee Cups" class="img-fluid w-100">
+                        <div class="blog-content">
+                            <div class="date">28 February 2020</div>
+                            <div class="title fw-bold">The Health Benefits Of Sunglasses</div>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════  FOOTER  ═══════════════════════ -->
+    <div class="footer" id="contact">
+        <div class="container-xl px-3 px-md-4 py-5">
+            <div class="row g-5 fooo">
+
+                <!-- Brand -->
+                <div class="col-12 col-sm-6 col-lg-3 footer1">
+                    <img src="fashionimg/footer-logonew.png" class="img11 img-fluid" alt="Footer Logo">
+                    <p>The customer is at the heart of our unique business model, which includes design.</p>
+                    <img src="fashionimg/payment.png" class="img-fluid" alt="Payment">
+                </div>
+
+                <!-- Shopping -->
+                <div class="col-6 col-sm-3 col-lg-2 footer2">
+                    <h3>SHOPPING</h3>
+                    <ul class="ps-0">
+                        <li><a href="#" class="footer22">Clothing Store</a></li>
+                        <li><a href="#" class="footer22">Trending Shoes</a></li>
+                        <li><a href="#" class="footer22">Accessories</a></li>
+                        <li><a href="#" class="footer22">Sale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Info -->
+                <div class="col-6 col-sm-3 col-lg-2 footer3">
+                    <h3>INFO</h3>
+                    <ul class="ps-0">
+                        <li><a href="#" class="footer22">Contact us</a></li>
+                        <li><a href="#" class="footer22">Payment Method</a></li>
+                        <li><a href="#" class="footer22">Delivery</a></li>
+                        <li><a href="#" class="footer22">Return & Exchanges</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-sm-6 col-lg-3 footer4">
+                    <h3>NEWSLETTER</h3>
+                    <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                    <input type="email" placeholder="Your email" class="w-100">
+                </div>
+
+            </div>
+        </div>
+
+        <p class="color">Copyright © 2025 All rights reserved | This template is made with ♥ by Colorlib</p>
+    </div>
+
+
+    <!-- Bootstrap 5 JS (needed for navbar toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        /* ── Tab Switch: Best Seller / New Arrival ── */
+        const shoesDiv = document.querySelector('.shoes');
+        const shirtsDiv = document.getElementById('shirts');
+
+        document.getElementById('showShoes').addEventListener('click', () => {
+            shoesDiv.style.display = 'flex';
+            shirtsDiv.style.display = 'none';
+        });
+
+        document.getElementById('showShirts').addEventListener('click', () => {
+            shirtsDiv.style.display = 'flex';
+            shoesDiv.style.display = 'none';
+        });
+
+        /* ── Smooth Scroll ── */
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').substring(1);
+                var targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    e.preventDefault();
+                    window.scrollTo({ top: targetSection.offsetTop - 90, behavior: 'smooth' });
+                }
+            });
+        });
+
+        /* ── jQuery: Back-to-Top + Login Modal + Slider ── */
+        $(document).ready(function () {
+
+            /* Back to Top */
+            $(window).on('scroll', function () {
+                if ($(this).scrollTop() > 200) { $('#backToTop').fadeIn(); }
+                else { $('#backToTop').fadeOut(); }
+            });
+            $('#backToTop').on('click', function () {
+                $('html, body').animate({ scrollTop: $('#home').offset().top }, 600);
+            });
+
+            /* Login Modal */
+            $('#openLogin').on('click', function (e) {
+                e.preventDefault();
+                $('#modalOverlay').fadeIn(200);
+                $('#modal input:first').focus();
+            });
+            $('#closeModal, #modalOverlay').on('click', function (e) {
+                if (e.target !== this) return;
+                $('#modalOverlay').fadeOut(200);
+            });
+            $('#modal').on('click', function (e) { e.stopPropagation(); });
+            $('#modal form').on('submit', function (e) {
+                e.preventDefault();
+                alert('Login form submitted!');
+                $('#modalOverlay').fadeOut(200);
+            });
+
+            /* Hero Slider */
+            let index = 0;
+            const slides = $('.slide');
+            const total = slides.length;
+
+            function showSlide(i) {
+                slides.removeClass('active').fadeOut(500);
+                slides.eq(i).addClass('active').delay(600).fadeIn(500);
+            }
+
+            $('.next').click(function () { index = (index + 1) % total; showSlide(index); });
+            $('.prev').click(function () { index = (index - 1 + total) % total; showSlide(index); });
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,753 @@
+/* ═══════════════════════════════════════════════
+   newfileready.css  –  Fashion Website
+   Bootstrap 5 is loaded first; this file adds
+   custom styles and responsive overrides.
+═══════════════════════════════════════════════ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 130px;
+    /* Space for fixed navbar */
+}
+
+/* ──────────────  NAVBAR  ────────────── */
+#navvv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    /* Above Bootstrap modal if needed */
+    background-color: white;
+}
+
+#openLogin {
+    margin-top: 8px;
+}
+
+.navheading {
+    background-color: black;
+    height: auto;
+    min-height: 45px;
+    width: 100%;
+}
+
+.navheading p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.pp {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.pp:hover {
+    color: #ccc;
+}
+
+.list li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list li:hover .nav-link {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: red;
+}
+
+#openLogin {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#openLogin:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+
+/* ──────────────  HERO SLIDER  ────────────── */
+.slider {
+    width: 100%;
+    height: 80vh;
+    /* Responsive height */
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide1 {
+    background-image: url('fashionimg/new\ index.jpg');
+}
+
+.slide2 {
+    background-image: url('fashionimg/new\ index2.jpg');
+}
+
+.active {
+    display: block;
+}
+
+.mmmmmmm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    transform: translateY(50px);
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.para {
+    color: red;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+
+.parah1 {
+    font-size: clamp(2.5rem, 5vw, 70px);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.para2 {
+    color: rgb(90, 90, 90);
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.btnnn {
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btnnn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.iiii {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.iiii i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.iiii i:hover {
+    color: red;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* ──────────────  BANNERS  ────────────── */
+.banner-wrap {
+    margin-top: 70px;
+    overflow: hidden;
+    display: flex;
+}
+
+.banner-img {
+    transition: transform 0.5s ease;
+    display: flex;
+}
+
+
+.banner-wrap:hover .banner-img {
+    transform: scale(1.05);
+}
+
+.banner-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    pointer-events: none;
+    /* Let clicks pass through to image if needed */
+}
+
+/* Adjust text position for different banners to match original look */
+.photo6 {
+    top: 65%;
+    left: 10%;
+}
+
+.photo7 {
+    top: 75%;
+    left: 10%;
+}
+
+#showShoes {
+    margin-bottom: 30px;
+}
+
+#showShirts {
+    margin-bottom: 30px;
+}
+
+.photo8 {
+    top: 65%;
+
+}
+
+.banner-text h1 {
+    font-size: clamp(1.5rem, 3vw, 32px);
+    font-weight: 700;
+}
+
+.h11 {
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    letter-spacing: 0.7px;
+    pointer-events: auto;
+}
+
+.h11:hover {
+    color: red;
+    text-decoration-color: red;
+}
+.shoes{
+    margin-bottom: 50px;
+}
+.shirts{
+    margin-bottom: 50px;
+}
+
+
+/* ──────────────  BEST SELLER / NEW ARRIVAL  ────────────── */
+.newoneh {
+    margin-top: 60px;
+}
+
+.content button {
+    background-color: transparent;
+    border: none;
+    color: grey;
+}
+
+.content button h1 {
+    font-size: clamp(1.5rem, 3vw, 30px);
+    transition: color 0.3s;
+}
+
+.content button:hover h1,
+.content button:focus h1 {
+    color: #000;
+}
+
+
+/* ──────────────  BAG SECTION  ────────────── */
+.bagimg {
+    background-color: rgb(252, 245, 231);
+    margin-top: 60px;
+}
+
+.left h1 {
+    font-size: clamp(1.5rem, 3vw, 36px);
+    margin-bottom: 10px;
+}
+
+.grey {
+    color: rgb(151, 151, 151);
+}
+
+.tasveer {
+    position: relative;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.right p {
+    letter-spacing: 1px;
+}
+
+.right h1 {
+    font-size: clamp(2rem, 4vw, 40px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.newbtn {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 12px 30px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.newbtn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+
+/* ──────────────  INSTAGRAM  ────────────── */
+.instagram-section{
+    margin-bottom: 50px;
+}
+.insta-img {
+    height: 100%;
+    object-fit: cover;
+    min-height: 200px;
+    margin-top: 60px;
+}
+
+.imta h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.imta p {
+    color: grey;
+    line-height: 1.6;
+    margin-left: 100px;
+    margin-right: -10px;
+}
+
+.male {
+    color: red !important;
+    font-weight: 600;
+    margin-top: -20px;
+}
+
+
+/* ──────────────  BLOG  ────────────── */
+.vv{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.blog-card {
+    position: relative;
+    background: #fff;
+}
+
+.blog-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog-content {
+    background: #fff;
+    padding: 20px 30px;
+    margin-top: -40px;
+    /* Pulls text box up over image */
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+    line-height: 1.4;
+}
+
+.read-more {
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.read-more:hover {
+    color: red;
+    border-color: red;
+}
+
+
+/* ──────────────  FOOTER  ────────────── */
+.footer {
+    background: black;
+    color: grey;
+}
+
+.footer h3 {
+    color: white;
+    font-size: 18px;
+    
+    font-weight: 600;
+}
+
+.footer p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer22 {
+    text-decoration: none;
+    color: grey;
+    transition: color 0.3s;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer22:hover {
+    color: white;
+}
+
+.footer4 input {
+    background-color: transparent;
+    border: 1px solid #444;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.footer4 input:focus {
+    outline: none;
+    border-color: grey;
+}
+
+.color {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ──────────────  MODAL  ────────────── */
+#modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    /* Above navbar */
+}
+
+#modal {
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#closeModal {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+#closeModal:hover {
+    color: #000;
+}
+
+#modal h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+#modal form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#modal form button {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+#modal form button:hover {
+    background: #333;
+}
+
+/* ──────────────  BACK TO TOP  ────────────── */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s;
+    display: none;
+    line-height: 1.2;
+}
+
+#backToTop:hover {
+    background: #004a98;
+    transform: translateY(-5px);
+}
+
+
+/* ════════════════════════════════════════════
+   RESPONSIVE OVERRIDES
+════════════════════════════════════════════ */
+
+/* Tablet and below */
+@media (max-width: 991px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .navheading {
+        display: none !important;
+    }
+
+    /* Hide top bar on mobile for cleaner look */
+
+    .slider {
+        min-height: 400px;
+        height: 60vh;
+    }
+
+    .mmmmmmm {
+        padding-left: 5%;
+    }
+
+    .photo8 {
+        text-align: left;
+        right: auto;
+        left: 10%;
+    }
+
+    /* Align text left on mobile */
+
+    .insta-img {
+        min-height: 150px;
+    }
+
+    .imta {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .slider {
+        min-height: 450px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .mmmmmmm {
+        padding-right: 5%;
+        padding-top: 40px;
+    }
+
+    .banner-text {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .photo8 {
+        right: 0;
+        text-align: center;
+    }
+
+    .left h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .sale-badge {
+        right: 5%;
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+
+    .blog-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .fooo {
+        text-align: center;
+    }
+
+    .footer img {
+        margin: 0 auto 20px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+    .para2 {
+        font-size: 14px;
+    }
+
+    .btnnn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .newbtn {
+        padding: 10px 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 15px !important;
+    }
+}
